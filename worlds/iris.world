@@ -6,11 +6,12 @@
       <uri>model://sun</uri>
     </include>
     <include>
-      <uri>model://iris</uri>
+      <uri>model://iris_r200</uri>
       <pose>1.01 0.98 0.83 0 0 1.14</pose>
     </include>
     <include>
       <uri>model://uneven_ground</uri>
+      <!--<uri>model://asphalt_plane</uri>-->
     </include>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
@@ -36,7 +37,7 @@
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose>-10 0 6 0 0.3 0</pose>
-        <!-- <view_controller>orbit</view_controller>
+        <!--<view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
         <track_visual>
           <name>iris</name>
