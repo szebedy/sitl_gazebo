@@ -23,6 +23,16 @@
       <child>r200::link</child>
     </joint>
 
+    <!--bottom camera-->
+    <include>
+      <uri>model://bottom_cam</uri>
+      <pose>0.07 0 -0.03 0 1.57079632679 0</pose>
+    </include>
+
+    <joint name="bottom_joint" type="fixed">
+      <parent>iris::base_link</parent>
+      <child>bottom_cam::link</child>
+    </joint>
   </model>
 </sdf>
 
