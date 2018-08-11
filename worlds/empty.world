@@ -13,11 +13,11 @@
     <include>
       <uri>model://marker</uri>
       <static>true</static>
-      <pose>8.2 2.1 1.25 0 0 0</pose>
+      <pose>5.2 1.1 1.25 0 0 0</pose>
     </include>
     <include>
       <uri>model://house_1</uri>
-      <pose>10 0 0 0 0 -1.5708</pose>
+      <pose>7 -1.0 0 0 0 -1.5708</pose>
     </include>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
