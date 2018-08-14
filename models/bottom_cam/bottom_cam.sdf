@@ -39,7 +39,7 @@
           </geometry>
         </visual>
         <sensor name='camera' type='camera'>
-          <camera name='__default__'>
+          <camera name='bottom_cam'>
             <horizontal_fov>1.25328</horizontal_fov>
             <image>
               <width>640</width>
@@ -62,13 +62,13 @@
           <update_rate>30</update_rate>
           <visualize>1</visualize>
           <plugin name='camera_plugin' filename='libgazebo_ros_camera.so'>
-              <robotNamespace></robotNamespace>
+              <robotNamespace>/</robotNamespace>
             <alwaysOn>true</alwaysOn>
             <imageTopicName>image_raw</imageTopicName>
             <cameraInfoTopicName>camera_info</cameraInfoTopicName>
             <updateRate>30.0</updateRate>
             <cameraName>usb_cam</cameraName>
-            <frameName>/robot_camera_link</frameName>
+            <frameName>bottom_cam</frameName>
             <CxPrime>320.8</CxPrime>
             <Cx>320.8</Cx>
             <Cy>236.0</Cy>
