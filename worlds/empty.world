@@ -9,15 +9,29 @@
     <include>
       <uri>model://grass_plane</uri>
     </include>
-    <!-- Whycon visual marker -->
+    <!-- Apartment with marker at East direction >
     <include>
       <uri>model://marker</uri>
       <static>true</static>
-      <pose>5.2 1.1 1.25 0 0 0</pose>
+      <pose>6.9 -8 7.5 0 0 0</pose>
     </include>
     <include>
+      <uri>model://apartment</uri>
+      <pose>15 -5 0 0 0 0</pose>
+    </include-->
+    <include>
       <uri>model://house_1</uri>
-      <pose>7 -1.0 0 0 0 -1.5708</pose>
+      <pose>35 6.0 0 0 0 0</pose>
+    </include>
+    <!-- Apartment with marker at North-East direction (yaw = 1 rad) -->
+    <include>
+      <uri>model://marker</uri>
+      <static>true</static>
+      <pose>-4.8 6.5 7.5 0 0 1</pose>
+    </include>
+    <include>
+      <uri>model://apartment</uri>
+      <pose>-3 15 0 0 0 1</pose>
     </include>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
